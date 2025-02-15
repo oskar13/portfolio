@@ -128,3 +128,12 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# Specific for this project
+
+# Ignore release dir, builds go here
+release/
+
+# Compiled css
+output.css
