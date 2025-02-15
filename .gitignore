@@ -133,7 +133,7 @@ dist
 # Specific for this project
 
 # Ignore release dir, builds go here
-release/
+public_html/
 
 # Compiled css
 output.css

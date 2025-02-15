@@ -20,7 +20,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch=always & npx live-server src",
-    "build": "npx tailwindcss -i ./src/input.css -o ./release/output.css --minify && cp -r src/*.html release/ && cp -r src/js release/"
+    "build": "npx tailwindcss -i ./src/input.css -o ./public_html/output.css --minify && cp -r src/*.html public_html/ && cp -r src/js public_html/"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.6",
