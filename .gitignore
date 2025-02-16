@@ -137,3 +137,6 @@ public_html/
 
 # Compiled css
 output.css
+
+# Images used on the site
+src/img/

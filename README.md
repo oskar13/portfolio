@@ -1,5 +1,5 @@
 # portfolio
-My personal static portfolio site, built with Tailwind CSS and automated with GitHub Actions + npm for deployment.
+My personal static portfolio site, built with Tailwind CSS and automated with GitHub Actions + node for deployment.
 
 ## Installation
 
