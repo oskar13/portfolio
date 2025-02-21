@@ -1,1 +1,3 @@
-console.log("Script running")
+import '../styles/main.css';
+
+
