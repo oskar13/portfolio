@@ -1,5 +1,6 @@
 # portfolio
-My personal static portfolio site, built with Tailwind CSS and automated with GitHub Actions + node for deployment.
+My personal portfolio site, built with Tailwind CSS, [Next.js](https://nextjs.org) and automated with GitHub Actions + npm for deployment.
+
 
 ## Installation
 
@@ -15,16 +16,15 @@ My personal static portfolio site, built with Tailwind CSS and automated with Gi
     npm run dev
 
 This will:
-* Compile Tailwind CSS in watch mode
-* Start a Live Server at http://localhost:8080
+* Run Turbopack
+* Start a Dev Server at http://localhost:3000
 
 ### 🔨 Build for Production
 
     npm run build
 
-This will:
-* Generate a minified CSS file
-* Copy HTML and JavaScript to public_html/ directory
+This will generate a static export of the site in the /out directory.
+
 
 
 ### 🚀 Deployment with GitHub Actions
@@ -32,3 +32,6 @@ This will:
 This project includes GitHub Actions to automatically:
 1. Build the production-ready site
 2. Deploy to a server via SCP
+
+
+

@@ -36,5 +36,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.KEY }}
-        source: "public_html/*"
+        source: "out/*"
         target: ${{ secrets.PUBLIC_HTML_DIR }}
