@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
               className="underline inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 ring-primary-900">
               Skip to Portfolio
               <Image
-                src="/icons/skip.svg"
+                src="./icons/skip.svg"
                 width={500}
                 height={500}
                 alt="Skip"
@@ -93,7 +94,7 @@ export default function Home() {
                 <a href="https://github.com/oskar13/mini-tracker" target="_blank"
                   className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800">
                   <Image
-                    src="/icons/github.svg"
+                    src="./icons/github.svg"
                     width={500}
                     height={500}
                     alt="Github"
@@ -106,7 +107,7 @@ export default function Home() {
                 <a href="#" target="_blank"
                   className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-emerald-600 border-2 rounded-lg  focus:ring-4  text-white border-emerald-600 hover:bg-emerald-700 focus:ring-emerald-200">
                   <Image
-                    src="/icons/liveplay.svg"
+                    src="./icons/liveplay.svg"
                     width={500}
                     height={500}
                     alt="View Live"
@@ -116,10 +117,13 @@ export default function Home() {
                 </a>
               </div>
               <div className="flex align-middle items-center justify-center">
-                <a href="/minitracker-case-study"
-                  className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800">
-                  <Image
-                    src="/icons/inspect.svg"
+                <Link
+                                className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800"
+
+                href="./minitracker-case-study">
+
+                <Image
+                    src="./icons/inspect.svg"
                     width={500}
                     height={500}
                     alt="Case Study"
@@ -127,7 +131,8 @@ export default function Home() {
                   />
                   &nbsp;
                   Case Study
-                </a>
+                </Link>
+
               </div>
             </div>
           </div>
@@ -182,7 +187,7 @@ export default function Home() {
             <div className="flex md:gap-6 gap-4">
               <div className='w-[10%] pt-2'>
                 <Image
-                  src="/icons/kood.svg"
+                  src="./icons/kood.svg"
                   width={400}
                   height={400}
                   alt="Baltic Computer Systems"
@@ -204,7 +209,7 @@ export default function Home() {
             <div className="flex md:gap-6 gap-4">
               <div className='w-[10%] pt-2'>
                 <Image
-                  src="/icons/bcs.svg"
+                  src="./icons/bcs.svg"
                   width={400}
                   height={400}
                   alt="Baltic Computer Systems"
@@ -228,7 +233,7 @@ export default function Home() {
             <div className="flex md:gap-6 gap-4">
               <div className='w-[10%] pt-2'>
                 <Image
-                  src="/icons/tlu.svg"
+                  src="./icons/tlu.svg"
                   width={100}
                   height={100}
                   alt="Tallinn University"
@@ -252,7 +257,7 @@ export default function Home() {
             <div className="flex md:gap-6 gap-4">
               <div className='w-[10%] pt-2'>
                 <Image
-                  src="/icons/tlu.svg"
+                  src="./icons/tlu.svg"
                   width={100}
                   height={100}
                   alt="Tallinn University"
@@ -307,7 +312,7 @@ export default function Home() {
               <a href="https://github.com/oskar13" target="_blank"
                 className="bg-cyan-800 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center m-2 sm:w-40">
                 <Image
-                  src="/icons/github.svg"
+                  src="./icons/github.svg"
                   width={500}
                   height={500}
                   alt="Github"
@@ -316,7 +321,7 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/joosep-oskar-ehaver-93478911b/" target="_blank"
                 className="bg-cyan-800 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center m-2 sm:w-40">
                 <Image
-                  src="/icons/linkedin.svg"
+                  src="./icons/linkedin.svg"
                   width={500}
                   height={500}
                   alt="Linkedin"
@@ -325,7 +330,7 @@ export default function Home() {
               <a href="https://www.facebook.com/oskar.ehaver" target="_blank"
                 className="bg-cyan-800 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center m-2 ">
                 <Image
-                  src="/icons/facebook.svg"
+                  src="./icons/facebook.svg"
                   width={500}
                   height={500}
                   alt="Facebook"
@@ -334,7 +339,7 @@ export default function Home() {
               <a href="#"
                 className="bg-cyan-800 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center m-2 sm:w-40">
                 <Image
-                  src="/icons/email.svg"
+                  src="./icons/email.svg"
                   width={500}
                   height={500}
                   alt="Email"

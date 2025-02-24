@@ -26,7 +26,7 @@ export default function AboutPage() {
               <a href="https://github.com/oskar13/mini-tracker" target="_blank" id="contact-now"
                 className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center border-2 rounded-lg  focus:ring-4  text-white border-purple-700 hover:bg-purple-700 focus:ring-gray-800 bg-violet-900">
                 <Image
-                  src="/icons/github.svg"
+                  src="./icons/github.svg"
                   width={500}
                   height={500}
                   alt="Github"
