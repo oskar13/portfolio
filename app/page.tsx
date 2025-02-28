@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link';
+import Slideshow from './components/Slideshow';
 
 export default function Home() {
   return (
@@ -118,11 +119,11 @@ export default function Home() {
               </div>
               <div className="flex align-middle items-center justify-center">
                 <Link
-                                className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800"
+                  className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800"
 
-                href="./minitracker-case-study">
+                  href="./minitracker-case-study">
 
-                <Image
+                  <Image
                     src="./icons/inspect.svg"
                     width={500}
                     height={500}
@@ -136,6 +137,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+
+
           <div className="grid gap-4">
             <div>
               <video muted autoPlay className="h-auto max-w-full rounded-lg mb-4" loop src="img/rae/video.mp4"></video>
@@ -149,10 +153,8 @@ export default function Home() {
               <p className="mb-4">A fully responsive WordPress theme built with TailwindCSS for a restaurant club.
                 Theme is
                 integrated with <a className="underline text-cyan-800" href="https://wpml.org/"
-                  target="_blank">WPML</a> and
-                <a className="underline text-cyan-800" href="https://www.advancedcustomfields.com/"
-                  target="_blank">ACF</a>
-                for managing multiple language content through the admin interface. Features a third-party
+                  target="_blank">WPML</a> and <a className="underline text-cyan-800" href="https://www.advancedcustomfields.com/"
+                    target="_blank">ACF</a> for managing multiple language content through the admin interface. Features a third-party
                 JavaScript
                 gallery for showcasing interior. Optimized for performance and seamless user experience across
                 devices.
@@ -167,9 +169,67 @@ export default function Home() {
 
           </div>
 
+
+
+
+
+
+      
+
+
+
+
         </div>
 
 
+
+
+        <div className="md:grid md:grid-cols-2 gap-4 py-8 md:py-16">
+            <div className='' >
+              <Slideshow></Slideshow>
+            </div>
+            <div >
+              <h3 className="text-3xl mb-2"><strong className="text-cyan-700">Next.js Site:</strong> RM Event <br /> <span className="italic text-2xl">Web Design and Development (Under Construction)</span></h3>
+              <p className="mb-4 leading-8"><strong className="text-gray-700">Tech Stack: </strong>
+                <a href="https://www.php.net/" target="_blank" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TypeScript</a>
+                <a href="https://www.mongodb.com/" target='_blank' className="bg-gray-300 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">MongoDB</a>
+                <a href="https://tailwindcss.com/" target="_blank" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TailwindCSS</a>
+                <a href="https://nextjs.org/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Next.js</a>
+                <a href="https://payloadcms.com/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Payload CMS</a>
+                <a href="https://github.com/features/actions" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Github Actions</a>
+              </p>
+              <p className="mb-4">
+                A high-performance, multi-language landing page built with Next.js and Payload CMS. The project is designed to be lightweight, flexible and scalable, with a headless CMS for content management and MongoDB as the database.
+              </p>
+              <p>
+
+                <a href="https://github.com/oskar13/rm-event" target="_blank"
+                  className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800">
+                  <Image
+                    src="./icons/github.svg"
+                    width={500}
+                    height={500}
+                    alt="Github"
+                    className="w-5 h-5 fill-current inline"
+                  />
+                  &nbsp;
+                  Browse On GitHub
+                </a>
+                <a href="http://rmevent.ee" target="_blank"
+                  className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-emerald-600 border-2 rounded-lg  focus:ring-4  text-white border-emerald-600 hover:bg-emerald-700 focus:ring-emerald-200">
+                  <Image
+                    src="./icons/liveplay.svg"
+                    width={500}
+                    height={500}
+                    alt="View Live"
+                    className="w-6 h-6 fill-current inline invert"
+                  />
+                  View Live
+                </a>
+              </p>
+            </div>
+
+          </div>
       </section>
 
 

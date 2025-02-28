@@ -48,14 +48,24 @@ export default function AboutPage() {
 
 
 
-        <section className="max-w-screen-lg px-4 py-8 mx-auto">
-          <h2 className="text-4xl mb-4">The Problem</h2>
-          <div className="px-4">
-            <p>Handling large files can be expensive and cumbersome when relying on traditional cloud storage providers. 
-              Setting up an FTP server is an option but uploading large files can be interrupted by network disconnections, requiring users to restart the process from scratch. 
-              Additionally when creating torrents of files, privacy concerns arise when sharing files on public torrent trackers, and widely known public trackers may be blocked by ISPs or 
-              attract unwanted attention.</p>
+        <section className="max-w-screen-lg px-4 py-8 mx-auto md:grid-cols-12 md:grid md:gap-4">
+          <div className=" md:col-span-6 items-center md:mb-0 mb-8">
+            <h2 className="text-4xl mb-4">The Problem</h2>
+            <div className="px-4">
+              <p>Handling large files can be expensive and cumbersome when relying on traditional cloud storage providers.
+                Setting up an FTP server is an option but uploading large files can be interrupted by network disconnections, requiring users to restart the process from scratch.
+                Additionally when creating torrents of files, privacy concerns arise when sharing files on public torrent trackers, and widely known public trackers may be blocked by ISPs or
+                attract unwanted attention.</p>
+            </div>
           </div>
+          <Image
+          src={"./img/p2p_info.svg"}
+          width={728}
+          height={446}
+          alt="Graphic about cloud storage vs P2P"
+          className="w-full md:col-span-6">
+
+          </Image>
         </section>
 
         <section className="max-w-screen-lg px-4 py-8 mx-auto">
