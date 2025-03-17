@@ -2,6 +2,12 @@ import Image from 'next/image'
 import Link from 'next/link';
 import Slideshow from './components/Slideshow';
 
+const rmEventImages = [
+  "/img/rmevent/1.png",
+  "/img/rmevent/2.png",
+  "/img/rmevent/3.png",
+];
+
 export default function Home() {
   return (
     <main>
@@ -41,7 +47,70 @@ export default function Home() {
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img className=" border-4 border-white rounded-full overflow-hidden shadow-lg" src="img/profile.jpg"
-              alt="Its a me" />
+              alt="Joosep Oskar Ehaver" />
+          </div>
+        </div>
+      </section>
+
+
+      <section id='about-me' className="max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 text-center">
+        <h2 className="text-4xl mb-4 font-bold text-slate-700">About Me</h2>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8'>
+          <div>
+            <p>
+
+            </p>
+          </div>
+          <div>
+            <h3 className='text-2xl mb-4 font-bold text-slate-700'>Skills</h3>
+            <p className="text-xl italic text-gray-800 font-light mb-4">Here is a list of technologies I have actually used in projects and course work.</p>
+            <h4 className='text-lg mb-4  text-slate-700'>Programming Languages:</h4>
+            <div>
+              <a href="https://go.dev/" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Go</a>
+              <a href="https://www.java.com/en/" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Java</a>
+              <a href="https://en.wikipedia.org/wiki/C%2B%2B" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">C / C++</a>
+              <a href="https://www.php.net/" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">PHP</a>
+              <a href="https://www.python.org/" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Python</a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">JavaScript</a>
+              <a href="https://www.typescriptlang.org/" target="_blank" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TypeScript</a>
+
+
+            </div>
+            <h4 className='text-lg mb-4  text-slate-700'>Frameworks/Libraries:</h4>
+            <div>
+              <a href="https://react.dev/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">React</a>
+              <a href="https://spring.io/projects/spring-boot" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Spring Boot</a>
+              <a href="https://nextjs.org/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Next.js</a>
+              <a href="https://nodejs.org/en" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Node.js</a>
+             
+              <a href="https://socket.io/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Socket.io</a>
+
+              <a href="https://hibernate.org/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Hibernate</a>
+              <a href="https://getbootstrap.com/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Bootstrap</a>
+              <a href="https://tailwindcss.com/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TailwindCSS</a>
+
+
+            </div>
+
+            <h4 className='text-lg mb-4  text-slate-700'>Tools & DevOps:</h4>
+            <div>
+              <a href="https://git-scm.com/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Git</a>
+              <a href="https://cmake.org/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">CMake</a>
+              <a href="https://gradle.org/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Gradle</a>
+              <a href="https://www.docker.com/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Docker</a>
+              <a href="https://github.com/features/actions" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Github Actions</a>
+
+
+            </div>
+
+            <h4 className='text-lg mb-4  text-slate-700'>Databases:</h4>
+            <div>
+              <a href="https://www.mysql.com/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">MySQL</a>
+              <a href="https://www.postgresql.org/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">PostgreSQL</a>
+              <a href="https://www.mongodb.com/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">MongoDB</a>
+
+
+            </div>
           </div>
         </div>
       </section>
@@ -140,6 +209,140 @@ export default function Home() {
 
 
 
+
+
+
+          <div className="grid gap-4">
+            <div>
+
+
+
+
+              <img className="h-auto max-w-full rounded-lg mb-4" src="img/tracker/1.png" alt="" />
+
+
+              <h3 className="text-3xl mb-2"><strong className="text-cyan-700">Java Spring Boot:</strong> Book n&apos; Fly <br /> <span className="italic text-2xl">Search Google Flights</span></h3>
+              <p className="mb-4 leading-8"><strong className="text-gray-700">Tech Stack: </strong>
+                <a href="https://www.java.com/en/" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Java</a>
+
+                <a href="https://www.docker.com/" className="bg-green-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Docker</a>
+
+                <a href="https://spring.io/projects/spring-boot" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Spring Boot</a>
+
+                <a href="https://react.dev/" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">React</a>
+
+                <a href="https://tailwindcss.com/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TailwindCSS</a>
+
+              </p>
+              <p className="mb-4">Mini Tracker is a small/mid-scale torrent tracker and web platform built in Go making possible to <strong>share large files between friends or within an organization</strong>.
+                Featuring both public and private tracking modes. It includes community features like invite-based accounts, chat and user-managed access rules for torrents.
+                Designed with <strong>easy deployment via Docker</strong>, it offers a simple interface for sharing large using
+                the
+                BitTorrent protocol, <strong>a low-cost P2P alternative to cloud solutions</strong>.
+              </p>
+              <div className="flex align-middle items-center justify-center mb-4">
+                <a href="https://github.com/oskar13/mini-tracker" target="_blank"
+                  className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800">
+                  <Image
+                    src="./icons/github.svg"
+                    width={500}
+                    height={500}
+                    alt="Github"
+                    className="w-5 h-5 fill-current inline"
+                  />
+                  &nbsp;
+                  Browse On GitHub
+                </a>
+
+                <a href="#" target="_blank"
+                  className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-emerald-600 border-2 rounded-lg  focus:ring-4  text-white border-emerald-600 hover:bg-emerald-700 focus:ring-emerald-200">
+                  <Image
+                    src="./icons/liveplay.svg"
+                    width={500}
+                    height={500}
+                    alt="View Live"
+                    className="w-6 h-6 fill-current inline invert"
+                  />
+                  View Live
+                </a>
+              </div>
+              <div className="flex align-middle items-center justify-center">
+                <Link
+                  className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800"
+
+                  href="./minitracker-case-study">
+
+                  <Image
+                    src="./icons/inspect.svg"
+                    width={500}
+                    height={500}
+                    alt="Case Study"
+                    className="w-4 h-4 fill-current inline invert"
+                  />
+                  &nbsp;
+                  Case Study
+                </Link>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+        <div className="md:grid md:grid-cols-2 gap-4 py-8 md:py-16">
+          
+            <div className='grid gap-4'>
+            <Slideshow images={rmEventImages} interval={3000} />
+              <h3 className="text-3xl mb-2"><strong className="text-cyan-700">Next.js Site:</strong> RM Event <br /> <span className="italic text-2xl">Web Design and Development (Under Construction)</span></h3>
+              <p className="mb-4 leading-8"><strong className="text-gray-700">Tech Stack: </strong>
+                <a href="https://www.typescriptlang.org/" target="_blank" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TypeScript</a>
+                <a href="https://www.mongodb.com/" target='_blank' className="bg-gray-300 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">MongoDB</a>
+                <a href="https://tailwindcss.com/" target="_blank" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TailwindCSS</a>
+                <a href="https://nextjs.org/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Next.js</a>
+                <a href="https://payloadcms.com/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Payload CMS</a>
+                <a href="https://github.com/features/actions" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Github Actions</a>
+              </p>
+              <p className="mb-4">
+                A high-performance, multi-language landing page built with Next.js and Payload CMS. The project is designed to be lightweight, flexible and scalable, with a headless CMS for content management and MongoDB as the database.
+              </p>
+              <p>
+                <a href="https://github.com/oskar13/rm-event" target="_blank"
+                  className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800">
+                  <Image
+                    src="./icons/github.svg"
+                    width={500}
+                    height={500}
+                    alt="Github"
+                    className="w-5 h-5 fill-current inline"
+                  />
+                  &nbsp;
+                  Browse On GitHub
+                </a>
+                <a href="http://rmevent.ee" target="_blank"
+                  className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-emerald-600 border-2 rounded-lg  focus:ring-4  text-white border-emerald-600 hover:bg-emerald-700 focus:ring-emerald-200">
+                  <Image
+                    src="./icons/liveplay.svg"
+                    width={500}
+                    height={500}
+                    alt="View Live"
+                    className="w-6 h-6 fill-current inline invert"
+                  />
+                  View Live
+                </a>
+              </p>
+            </div>
+        
+
+
+
           <div className="grid gap-4">
             <div>
               <video muted autoPlay className="h-auto max-w-full rounded-lg mb-4" loop src="img/rae/video.mp4"></video>
@@ -171,65 +374,7 @@ export default function Home() {
 
 
 
-
-
-
-      
-
-
-
-
         </div>
-
-
-
-
-        <div className="md:grid md:grid-cols-2 gap-4 py-8 md:py-16">
-            <div className='' >
-              <Slideshow></Slideshow>
-            </div>
-            <div >
-              <h3 className="text-3xl mb-2"><strong className="text-cyan-700">Next.js Site:</strong> RM Event <br /> <span className="italic text-2xl">Web Design and Development (Under Construction)</span></h3>
-              <p className="mb-4 leading-8"><strong className="text-gray-700">Tech Stack: </strong>
-                <a href="https://www.php.net/" target="_blank" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TypeScript</a>
-                <a href="https://www.mongodb.com/" target='_blank' className="bg-gray-300 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">MongoDB</a>
-                <a href="https://tailwindcss.com/" target="_blank" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TailwindCSS</a>
-                <a href="https://nextjs.org/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Next.js</a>
-                <a href="https://payloadcms.com/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Payload CMS</a>
-                <a href="https://github.com/features/actions" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Github Actions</a>
-              </p>
-              <p className="mb-4">
-                A high-performance, multi-language landing page built with Next.js and Payload CMS. The project is designed to be lightweight, flexible and scalable, with a headless CMS for content management and MongoDB as the database.
-              </p>
-              <p>
-
-                <a href="https://github.com/oskar13/rm-event" target="_blank"
-                  className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800">
-                  <Image
-                    src="./icons/github.svg"
-                    width={500}
-                    height={500}
-                    alt="Github"
-                    className="w-5 h-5 fill-current inline"
-                  />
-                  &nbsp;
-                  Browse On GitHub
-                </a>
-                <a href="http://rmevent.ee" target="_blank"
-                  className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-emerald-600 border-2 rounded-lg  focus:ring-4  text-white border-emerald-600 hover:bg-emerald-700 focus:ring-emerald-200">
-                  <Image
-                    src="./icons/liveplay.svg"
-                    width={500}
-                    height={500}
-                    alt="View Live"
-                    className="w-6 h-6 fill-current inline invert"
-                  />
-                  View Live
-                </a>
-              </p>
-            </div>
-
-          </div>
       </section>
 
 

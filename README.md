@@ -1,13 +1,13 @@
 # portfolio
-My personal portfolio site, built with Tailwind CSS, [Next.js](https://nextjs.org) and automated with GitHub Actions + npm for deployment.
+My personal portfolio site, built with Tailwind CSS, [Next.js](https://nextjs.org) and automated with GitHub Actions + npm for deployment. Next.js output mode is set to export mode for generating a static site with no need for a node.js runtime when hosting the site.
 
 
 ## Installation
 
 **Install dependencies**  
-   ```sh
-   npm install
-   ```
+
+    npm install
+
 
 ## Usage
 
@@ -23,7 +23,7 @@ This will:
 
     npm run build
 
-This will generate a static export of the site in the /out directory.
+This will generate a static export of the site in the /out directory that can be hosted on any plain HTTP server.
 
 
 
