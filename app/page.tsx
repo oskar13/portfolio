@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import Slideshow from './components/Slideshow';
+import MainContactFooter from './components/MainContactFooter';
 
 const rmEventImages = [
   "/img/rmevent/1.png",
@@ -55,7 +56,7 @@ export default function Home() {
 
       <section id='about-me' className="max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 text-center">
         <h2 className="text-4xl mb-4 font-bold text-slate-700">About Me</h2>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8'>
+        <div className='grid grid-cols-1'>
           <div>
             <p>
 
@@ -64,8 +65,8 @@ export default function Home() {
           <div>
             <h3 className='text-2xl mb-4 font-bold text-slate-700'>Skills</h3>
             <p className="text-xl italic text-gray-800 font-light mb-4">Here is a list of technologies I have actually used in projects and course work.</p>
-            <h4 className='text-lg mb-4  text-slate-700'>Programming Languages:</h4>
-            <div>
+            <h4 className='bg-blue-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700'>Programming Languages:</h4>
+            <div className='mb-8'>
               <a href="https://go.dev/" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Go</a>
               <a href="https://www.java.com/en/" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Java</a>
               <a href="https://en.wikipedia.org/wiki/C%2B%2B" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">C / C++</a>
@@ -73,41 +74,41 @@ export default function Home() {
               <a href="https://www.python.org/" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Python</a>
               <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">JavaScript</a>
               <a href="https://www.typescriptlang.org/" target="_blank" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TypeScript</a>
-
-
             </div>
-            <h4 className='text-lg mb-4  text-slate-700'>Frameworks/Libraries:</h4>
-            <div>
-              <a href="https://react.dev/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">React</a>
+
+            <h4 className='bg-purple-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700'>Frameworks/Libraries Backend:</h4>
+            <div className='mb-8'>
               <a href="https://spring.io/projects/spring-boot" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Spring Boot</a>
               <a href="https://nextjs.org/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Next.js</a>
               <a href="https://nodejs.org/en" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Node.js</a>
-             
-              <a href="https://socket.io/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Socket.io</a>
-
               <a href="https://hibernate.org/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Hibernate</a>
+            </div>
+
+
+            <h4 className='bg-yellow-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700'>Frameworks/Libraries Frontend:</h4>
+            <div className='mb-8'>
+              <a href="https://react.dev/" target="_blank" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">React</a>
+              <a href="https://socket.io/" target="_blank" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Socket.io</a>
               <a href="https://getbootstrap.com/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Bootstrap</a>
               <a href="https://tailwindcss.com/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TailwindCSS</a>
+            </div>
+
+            <h4 className='bg-green-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700'>Tools & DevOps:</h4>
+            <div className='mb-8'>
+              <a href="https://git-scm.com/" target="_blank" className="bg-green-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Git</a>
+              <a href="https://cmake.org/" className="bg-green-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">CMake</a>
+              <a href="https://gradle.org/" className="bg-green-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Gradle</a>
+              <a href="https://www.docker.com/" className="bg-green-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Docker</a>
+              <a href="https://github.com/features/actions" target="_blank" className="bg-green-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Github Actions</a>
 
 
             </div>
 
-            <h4 className='text-lg mb-4  text-slate-700'>Tools & DevOps:</h4>
+            <h4 className='bg-gray-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700'>Databases:</h4>
             <div>
-              <a href="https://git-scm.com/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Git</a>
-              <a href="https://cmake.org/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">CMake</a>
-              <a href="https://gradle.org/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Gradle</a>
-              <a href="https://www.docker.com/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Docker</a>
-              <a href="https://github.com/features/actions" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Github Actions</a>
-
-
-            </div>
-
-            <h4 className='text-lg mb-4  text-slate-700'>Databases:</h4>
-            <div>
-              <a href="https://www.mysql.com/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">MySQL</a>
-              <a href="https://www.postgresql.org/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">PostgreSQL</a>
-              <a href="https://www.mongodb.com/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">MongoDB</a>
+              <a href="https://www.mysql.com/" target="_blank" className="bg-gray-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">MySQL</a>
+              <a href="https://www.postgresql.org/" className="bg-gray-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">PostgreSQL</a>
+              <a href="https://www.mongodb.com/" className="bg-gray-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">MongoDB</a>
 
 
             </div>
@@ -139,7 +140,7 @@ export default function Home() {
               <img className="h-auto max-w-full rounded-lg mb-4" src="img/tracker/1.png" alt="" />
 
 
-              <h3 className="text-3xl mb-2"><strong className="text-cyan-700">Full-Stack Application:</strong> Mini Tracker <br /> <span className="italic text-2xl">A Lightweight Torrent Tracker & Community Hub</span></h3>
+              <h3 className="text-3xl mb-2"><strong className="text-cyan-700">Full-Stack Application:</strong> <strong className='text-slate-700'>Mini Tracker</strong> <br /> <span className="italic text-2xl">A Lightweight Torrent Tracker & Community Hub</span></h3>
               <p className="mb-4 leading-8"><strong className="text-gray-700">Tech Stack: </strong>
                 <a href="https://go.dev/" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Go</a>
 
@@ -221,15 +222,16 @@ export default function Home() {
               <img className="h-auto max-w-full rounded-lg mb-4" src="img/tracker/1.png" alt="" />
 
 
-              <h3 className="text-3xl mb-2"><strong className="text-cyan-700">Java Spring Boot:</strong> Book n&apos; Fly <br /> <span className="italic text-2xl">Search Google Flights</span></h3>
+              <h3 className="text-3xl mb-2"><strong className="text-cyan-700">Java Spring Boot and React:</strong> <strong className='text-slate-700'>Book n&apos; Fly</strong> <br /> <span className="italic text-2xl">Search Google Flights</span></h3>
               <p className="mb-4 leading-8"><strong className="text-gray-700">Tech Stack: </strong>
                 <a href="https://www.java.com/en/" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Java</a>
+                <a href="https://www.typescriptlang.org/" target="_blank" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TypeScript</a>
 
                 <a href="https://www.docker.com/" className="bg-green-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Docker</a>
 
                 <a href="https://spring.io/projects/spring-boot" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Spring Boot</a>
 
-                <a href="https://react.dev/" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">React</a>
+                <a href="https://react.dev/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">React</a>
 
                 <a href="https://tailwindcss.com/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TailwindCSS</a>
 
@@ -499,63 +501,7 @@ export default function Home() {
       </section>
 
 
-
-      {//<!-- Footer Section -->
-      }
-      <footer className="w-full min-h-screen flex items-center justify-center bg-slate-900">
-        <div className="md:w-2/3 w-full px-4 text-white flex flex-col">
-          <div className="w-full text-7xl font-bold">
-            <h1 className="w-full md:w-2/3">That&apos;s it for now.</h1>
-          </div>
-          <div className="flex mt-8 flex-col md:flex-row md:justify-between mb-4">
-            <p className="w-full md:w-2/3 text-gray-400 text-xl">Thank you for visiting my website. If you have any more
-              questions, you can reach me through the links bellow.</p>
-
-          </div>
-          <div className="flex flex-col">
-            <div className="flex flex-wrap justify-center pb-4">
-              <a href="https://github.com/oskar13" target="_blank"
-                className="bg-cyan-800 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center m-2 sm:w-40">
-                <Image
-                  src="./icons/github.svg"
-                  width={500}
-                  height={500}
-                  alt="Github"
-                  className="w-5 h-5 fill-current inline"
-                />&nbsp;GitHub</a>
-              <a href="https://www.linkedin.com/in/joosep-oskar-ehaver-93478911b/" target="_blank"
-                className="bg-cyan-800 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center m-2 sm:w-40">
-                <Image
-                  src="./icons/linkedin.svg"
-                  width={500}
-                  height={500}
-                  alt="Linkedin"
-                  className="w-5 h-5 fill-current inline invert"
-                />&nbsp;Linkedin</a>
-              <a href="https://www.facebook.com/oskar.ehaver" target="_blank"
-                className="bg-cyan-800 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center m-2 ">
-                <Image
-                  src="./icons/facebook.svg"
-                  width={500}
-                  height={500}
-                  alt="Facebook"
-                  className="w-5 h-5 fill-current inline invert"
-                />&nbsp;Facebook</a>
-              <a href="#"
-                className="bg-cyan-800 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center m-2 sm:w-40">
-                <Image
-                  src="./icons/email.svg"
-                  width={500}
-                  height={500}
-                  alt="Email"
-                  className="w-5 h-5 fill-current inline invert"
-                />&nbsp;E-mail</a>
-            </div>
-            <hr className="border-gray-600" />
-            <p className="w-full text-center my-12 text-gray-600">Copyright © 2025 Joosep Oskar Ehaver</p>
-          </div>
-        </div>
-      </footer>
+      <MainContactFooter />
 
 
 

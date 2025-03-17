@@ -1,4 +1,5 @@
 import Image from "next/image";
+import MainContactFooter from "../components/MainContactFooter";
 
 export const metadata = {
   title: "Case Study: Minitorrent",
@@ -112,7 +113,7 @@ export default function AboutPage() {
       </main>
 
 
-      <footer>Insert nav footer here</footer>
+      <MainContactFooter />
     </>
 
 
