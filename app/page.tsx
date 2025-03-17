@@ -9,6 +9,12 @@ const rmEventImages = [
   "/img/rmevent/3.png",
 ];
 
+const booknFly = [
+  "/img/booknfly/1.jpg",
+  "/img/booknfly/2.jpg",
+  "/img/booknfly/3.jpg",
+];
+
 export default function Home() {
   return (
     <main>
@@ -219,7 +225,7 @@ export default function Home() {
 
 
 
-              <img className="h-auto max-w-full rounded-lg mb-4" src="img/tracker/1.png" alt="" />
+              <Slideshow images={booknFly} />
 
 
               <h3 className="text-3xl mb-2"><strong className="text-cyan-700">Java Spring Boot and React:</strong> <strong className='text-slate-700'>Book n&apos; Fly</strong> <br /> <span className="italic text-2xl">Search Google Flights</span></h3>
@@ -243,7 +249,7 @@ export default function Home() {
                 BitTorrent protocol, <strong>a low-cost P2P alternative to cloud solutions</strong>.
               </p>
               <div className="flex align-middle items-center justify-center mb-4">
-                <a href="https://github.com/oskar13/mini-tracker" target="_blank"
+                <a href="https://github.com/oskar13/cgi-summer-internship-2025" target="_blank"
                   className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800">
                   <Image
                     src="./icons/github.svg"
@@ -272,7 +278,7 @@ export default function Home() {
                 <Link
                   className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800"
 
-                  href="./minitracker-case-study">
+                  href="./book-n-fly">
 
                   <Image
                     src="./icons/inspect.svg"
