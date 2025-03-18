@@ -2,6 +2,8 @@
 import MainContactFooter from "../components/MainContactFooter";
 import Image from "next/image";
 
+import background from "../../public/img/booknfly/background.jpg"
+
 export const metadata = {
   title: "Case Study: Book n Fly",
   description: "A Spring Boot app with React frontend, for searching flight and generating seat maps.",
@@ -12,7 +14,9 @@ export default function AboutPage() {
     <>
     <main> 
 
-    <section className="bg-gradient-to-b from-indigo-800 to-purple-800 bg-[url(/img/booknfly/background.jpg)] bg-cover">
+    <section className={`bg-gradient-to-b from-indigo-800 to-purple-800 bg-cover`}
+    style={{ backgroundImage: `url(${background.src})`}}
+    >
           <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
             <div className="mr-auto place-self-center lg:col-span-7">
               <h1

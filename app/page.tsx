@@ -71,7 +71,7 @@ export default function Home() {
           <div>
             <h3 className='text-2xl mb-4 font-bold text-slate-700'>Skills</h3>
             <p className="text-xl italic text-gray-800 font-light mb-4">Here is a list of technologies I have actually used in projects and course work.</p>
-            <h4 className='bg-blue-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700'>Programming Languages:</h4>
+            <h4 className='bg-blue-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700 font-semibold'>Programming Languages:</h4>
             <div className='mb-8'>
               <a href="https://go.dev/" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Go</a>
               <a href="https://www.java.com/en/" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Java</a>
@@ -82,7 +82,7 @@ export default function Home() {
               <a href="https://www.typescriptlang.org/" target="_blank" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TypeScript</a>
             </div>
 
-            <h4 className='bg-purple-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700'>Frameworks/Libraries Backend:</h4>
+            <h4 className='bg-purple-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700 font-semibold'>Frameworks/Libraries Backend:</h4>
             <div className='mb-8'>
               <a href="https://spring.io/projects/spring-boot" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Spring Boot</a>
               <a href="https://nextjs.org/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Next.js</a>
@@ -91,7 +91,7 @@ export default function Home() {
             </div>
 
 
-            <h4 className='bg-yellow-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700'>Frameworks/Libraries Frontend:</h4>
+            <h4 className='bg-yellow-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700 font-semibold'>Frameworks/Libraries Frontend:</h4>
             <div className='mb-8'>
               <a href="https://react.dev/" target="_blank" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">React</a>
               <a href="https://socket.io/" target="_blank" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Socket.io</a>
@@ -99,7 +99,7 @@ export default function Home() {
               <a href="https://tailwindcss.com/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TailwindCSS</a>
             </div>
 
-            <h4 className='bg-green-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700'>Tools & DevOps:</h4>
+            <h4 className='bg-green-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700 font-semibold'>Tools & DevOps:</h4>
             <div className='mb-8'>
               <a href="https://git-scm.com/" target="_blank" className="bg-green-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Git</a>
               <a href="https://cmake.org/" className="bg-green-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">CMake</a>
@@ -110,7 +110,7 @@ export default function Home() {
 
             </div>
 
-            <h4 className='bg-gray-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700'>Databases:</h4>
+            <h4 className='bg-gray-200 inline-block py-1 px-2 rounded-lg text-lg mb-4 mt-4  text-slate-700 font-semibold'>Databases:</h4>
             <div>
               <a href="https://www.mysql.com/" target="_blank" className="bg-gray-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">MySQL</a>
               <a href="https://www.postgresql.org/" className="bg-gray-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">PostgreSQL</a>
