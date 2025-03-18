@@ -197,7 +197,7 @@ export default function Home() {
                 <Link
                   className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800"
 
-                  href="./minitracker-case-study">
+                  href="./minitracker-case-study.html">
 
                   <Image
                     src="./icons/inspect.svg"
@@ -242,11 +242,7 @@ export default function Home() {
                 <a href="https://tailwindcss.com/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TailwindCSS</a>
 
               </p>
-              <p className="mb-4">Mini Tracker is a small/mid-scale torrent tracker and web platform built in Go making possible to <strong>share large files between friends or within an organization</strong>.
-                Featuring both public and private tracking modes. It includes community features like invite-based accounts, chat and user-managed access rules for torrents.
-                Designed with <strong>easy deployment via Docker</strong>, it offers a simple interface for sharing large using
-                the
-                BitTorrent protocol, <strong>a low-cost P2P alternative to cloud solutions</strong>.
+              <p className="mb-4">Book n’ Fly is a flight search and seat recommendation web app built with a <strong>Spring Boot</strong> backend and a React frontend. Designed for the CGI summer internship application, it integrates real flight data via SerpAPI’s Google Flights API while also supporting offline testing with a mock data mode. Packaged with <strong>Docker</strong> for easy deployment, it offers multiple setup options, from a prebuilt Docker image to local development.
               </p>
               <div className="flex align-middle items-center justify-center mb-4">
                 <a href="https://github.com/oskar13/cgi-summer-internship-2025" target="_blank"
@@ -262,7 +258,7 @@ export default function Home() {
                   Browse On GitHub
                 </a>
 
-                <a href="#" target="_blank"
+                <a href="http://booknfly.jooseposkarehaver.com" target="_blank"
                   className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-emerald-600 border-2 rounded-lg  focus:ring-4  text-white border-emerald-600 hover:bg-emerald-700 focus:ring-emerald-200">
                   <Image
                     src="./icons/liveplay.svg"
@@ -278,7 +274,7 @@ export default function Home() {
                 <Link
                   className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800"
 
-                  href="./book-n-fly">
+                  href="./book-n-fly.html">
 
                   <Image
                     src="./icons/inspect.svg"
