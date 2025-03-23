@@ -2,7 +2,7 @@
 import MainContactFooter from "../components/MainContactFooter";
 import Image from "next/image";
 
-import background from "../../public/img/booknfly/background.jpg"
+import background from "../../src_public/img/booknfly/background.jpg"
 
 export const metadata = {
   title: "Case Study: Book n Fly",
