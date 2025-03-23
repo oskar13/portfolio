@@ -98,12 +98,13 @@ export default function AboutPage() {
           <h2 className="text-4xl mb-4">Lessons Learned & Future Plans</h2>
           <div className="px-4">
             <p className="mb-2">Building Mini Tracker highlighted significant limitations in BitTorrent&apos;s design. While highly efficient for file distribution, the protocol lacks inherent privacy protections and access control. Without built-in encryption or mechanisms to prevent unauthorized peers from accessing data, true security remains elusive. Mini Tracker&apos;s implementation of unique tracking URLs and user authentication mitigates visibility concerns but does not offer a comprehensive solution. A fundamental overhaul of the protocol would be necessary to achieve robust security, which extends beyond this project’s current scope. However, the community features, such as secure decryption key sharing via chat, serve as a practical measure for encrypting sensitive files prior to distribution.</p>
-            <p className="mb-2">Looking ahead, WebRTC integration presents an opportunity to enhance security. Its encrypted, browser-based peer-to-peer channels could serve as an alternative or complement to BitTorrent, reducing reliance on trackers and improving confidentiality. Additional plans include tighter Discord integration for seamless sharing and refining user-managed access rules to enhance privacy controls. For now, Mini Tracker serves as a proof of concept - lightweight, functional, and well-positioned for future evolution.</p>
+            <p className="mb-2">Looking ahead, WebRTC integration presents an opportunity to enhance security. Its encrypted, browser-based peer-to-peer channels could serve as an alternative or complement to BitTorrent, reducing reliance on trackers and improving confidentiality. Additional plans include Discord integration for seamless sharing and refining user-managed access rules to enhance privacy controls. For now, Mini Tracker serves as a proof of concept - lightweight and well-positioned for future development.</p>
             <h3 className="text-lg mb-1">Future development plans include:</h3>
             <ul className="list-disc pl-8 mb-4">
               <li>Exploring <a className="underline text-sky-700 cursor-pointer" href="https://en.wikipedia.org/wiki/WebRTC">WebRTC</a>-based P2P file transfers to provide encrypted, real-time sharing without a tracker.</li>
               <li>Enhancing access control mechanisms for better user authentication and authorization.</li>
               <li>Developing additional community features, such as user reputation tracking and group-based permissions.</li>
+              <li>Splitting the functionality into independent modules.</li>
             </ul>
             <p>Mini Tracker aims to remain a lightweight yet powerful solution for private torrent tracking, enabling users to share large files securely and efficiently.</p>
           </div>
