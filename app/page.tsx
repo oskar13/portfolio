@@ -384,6 +384,57 @@ export default function Home() {
 
 
 
+      {//<!-- Education section-->
+      }
+      <section className="max-w-screen-xl px-4 py-8 mx-auto lg:py-8">
+        <h2 id="education" className="text-4xl mb-4 font-bold text-slate-700 text-center">💼 Related Work Experience</h2>
+
+        <ul className="">
+          <li className='mb-4'>
+
+            <div className="flex md:gap-6 gap-4">
+              <div className='w-[10%] pt-2'>
+                <Image
+                  src="./icons/mortalis.svg"
+                  width={400}
+                  height={400}
+                  alt="Baltic Computer Systems"
+                  className='w-full h-auto'
+                />
+              </div>
+              <div className="mb-8 flex-1">
+                <h3 className="text-2xl font-bold">Life Long Fun;D</h3>
+                <h4 className="text-xl">Full Stack Web Developer</h4>
+                <p className="text-gray-600 text-sm mb-2">May 2025 - Present</p>
+         <p className="text-sm text-gray-600">
+          Next.js (React) · Go Backend · Authentication Systems · SSO · Prisma ORM · PostgreSQL
+        </p>
+
+        <p className='mb-2'>
+          I was tasked building the core account system powering the upcoming <em>Mortalis MMO</em>, 
+          designing a secure <strong>JWT-based authentication system</strong> in Go 
+          for both web and game clients. On the frontend, I developed a  
+          <strong> Next.js (React)</strong> application and integrated 
+          <strong> Prisma ORM with PostgreSQL</strong> to provide robust data modeling for integrating game accounts and community portal.
+        </p>
+
+        <p >
+          To support different login options, I architected both 
+          <strong> OAuth provider integrations</strong> and traditional email/password 
+          flows. I also connected our <strong>WooCommerce</strong> store to the Next.js 
+          community portal, creating a seamless user experience with our e-commerce solution provider.
+        </p>
+
+              </div>
+            </div>
+          </li>
+
+
+        </ul>
+      </section>
+
+
+
 
       {//<!-- Education section-->
       }
@@ -404,12 +455,14 @@ export default function Home() {
                 />
               </div>
               <div className="mb-8 flex-1">
-                <h3 className="text-2xl">Kood/Jõhvi - Software Development - Ongoing</h3>
-                <p className="text-gray-600 text-sm mb-2">January 2024 - July 2025</p>
-                <p>Currently enrolled in an innovative, project-based software development program focused on
+                <h3 className="text-2xl">Kood/Jõhvi - Software Development</h3>
+                <p className="text-gray-600 text-sm mb-2">January 2024 - August 2025</p>
+                <p>Was enrolled in an innovative, project-based software development program focused on
                   real-world coding challenges.</p>
                 <p>Developing expertise in software architecture, system design, and full-stack application
-                  development through hands-on projects using <strong>Golang</strong> and <strong>JavaScript</strong>.
+                  development through hands-on projects using <strong>Golang</strong> and <strong>TypeScript</strong>. 
+                  My final specialization module was the use of <strong>LLMs</strong> in web applications. Implementing <strong>RAG</strong> to base 
+                  text generation on real data.
                 </p>
               </div>
             </div>
