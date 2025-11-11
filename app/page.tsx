@@ -114,9 +114,6 @@ export default function Home() {
             <div>
               <a href="https://www.mysql.com/" target="_blank" className="bg-gray-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">MySQL</a>
               <a href="https://www.postgresql.org/" className="bg-gray-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">PostgreSQL</a>
-              <a href="https://www.mongodb.com/" className="bg-gray-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">MongoDB</a>
-
-
             </div>
           </div>
         </div>
@@ -137,6 +134,65 @@ export default function Home() {
 
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+
+
+      <div className="grid gap-4">
+            <div>
+              <img className="h-auto max-w-full rounded-lg mb-4" src="img/mortalis/thumbnail.webp" alt="" />
+
+
+              <h3 className="text-3xl mb-2"><strong className="text-cyan-700">Mortalis Game:</strong> <strong className='text-slate-700'>Web Projects</strong> <br /> <span className="italic text-2xl">Website, Community Hub and Discord Integrations</span></h3>
+              <p className="mb-4 leading-8"><strong className="text-gray-700">Tech Stack: </strong>
+                <a href="https://go.dev/" className="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Go</a>
+
+                <a href="https://www.docker.com/" className="bg-green-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Docker</a>
+
+                <a href="https://www.mysql.com/" className="bg-gray-300 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">PostgreSQL</a>
+
+                <a href="https://tailwindcss.com/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TailwindCSS</a>
+
+                <a href="https://en.wikipedia.org/wiki/BitTorrent" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Next.js</a>
+
+                <a href="https://en.wikipedia.org/wiki/BitTorrent" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Gin</a>
+              </p>
+              <p className="mb-4">Mortalis: Back to the Roots is an upcoming ground-breaking, new survival MMORPG. My task was to rebuild their <strong>website</strong> and <strong>community portal</strong> with future expansions in mind.
+              </p>
+              <div className="flex align-middle items-center justify-center mb-4 space-x-4">
+
+
+                <a href="https://mortalisgame.com/" target="_blank"
+                  className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-emerald-600 border-2 rounded-lg  focus:ring-4  text-white border-emerald-600 hover:bg-emerald-700 focus:ring-emerald-200">
+                  <Image
+                    src="./icons/liveplay.svg"
+                    width={500}
+                    height={500}
+                    alt="View Live"
+                    className="w-6 h-6 fill-current inline invert"
+                  />
+                  View Live
+                </a>
+                                <Link
+                  className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800"
+
+                  href="./mortalis.html">
+
+                  <Image
+                    src="./icons/inspect.svg"
+                    width={500}
+                    height={500}
+                    alt="Case Study"
+                    className="w-4 h-4 fill-current inline invert"
+                  />
+                  &nbsp;
+                  Case Study
+                </Link>
+              </div>
+
+            </div>
+          </div>
+
+
+
           <div className="grid gap-4">
             <div>
 
@@ -180,20 +236,6 @@ export default function Home() {
                   &nbsp;
                   Browse On GitHub
                 </a>
-
-                <a href="#" target="_blank"
-                  className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-emerald-600 border-2 rounded-lg  focus:ring-4  text-white border-emerald-600 hover:bg-emerald-700 focus:ring-emerald-200">
-                  <Image
-                    src="./icons/liveplay.svg"
-                    width={500}
-                    height={500}
-                    alt="View Live"
-                    className="w-6 h-6 fill-current inline invert"
-                  />
-                  View Live
-                </a>
-              </div>
-              <div className="flex align-middle items-center justify-center">
                 <Link
                   className="mr-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-slate-500 border-2 rounded-lg  focus:ring-4  text-white border-slate-400 hover:bg-gray-700 focus:ring-gray-800"
 
@@ -211,6 +253,7 @@ export default function Home() {
                 </Link>
 
               </div>
+
             </div>
           </div>
 
