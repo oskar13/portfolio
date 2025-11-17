@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import HeaderMenu from "./components/HeaderMenu";
 
 import "./globals.css";
@@ -23,6 +24,12 @@ export default function RootLayout({
         <HeaderMenu />
 
         {children}
+
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="310915fa-81c1-4d85-9065-991a6ba3f428"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

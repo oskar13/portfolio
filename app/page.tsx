@@ -147,13 +147,15 @@ export default function Home() {
 
                 <a href="https://www.docker.com/" className="bg-green-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Docker</a>
 
-                <a href="https://www.mysql.com/" className="bg-gray-300 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">PostgreSQL</a>
+                <a href="https://www.postgresql.org/" className="bg-gray-300 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">PostgreSQL</a>
 
                 <a href="https://tailwindcss.com/" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TailwindCSS</a>
 
                 <a href="https://en.wikipedia.org/wiki/BitTorrent" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Next.js</a>
 
                 <a href="https://en.wikipedia.org/wiki/BitTorrent" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Gin</a>
+              
+                <a href="https://github.com/features/actions" target="_blank" className="bg-green-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Github Actions</a>
               </p>
               <p className="mb-4">Mortalis: Back to the Roots is an upcoming ground-breaking, new survival MMORPG. My task was to rebuild their <strong>website</strong> and <strong>community portal</strong> with future expansions in mind.
               </p>
@@ -339,12 +341,6 @@ export default function Home() {
 
 
 
-        </div>
-
-
-
-
-        <div className="md:grid md:grid-cols-2 gap-4 py-8 md:py-16">
           
             <div className='grid gap-4'>
             <Slideshow images={rmEventImages} interval={3000} />
@@ -355,7 +351,7 @@ export default function Home() {
                 <a href="https://tailwindcss.com/" target="_blank" className="bg-yellow-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">TailwindCSS</a>
                 <a href="https://nextjs.org/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Next.js</a>
                 <a href="https://payloadcms.com/" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Payload CMS</a>
-                <a href="https://github.com/features/actions" target="_blank" className="bg-purple-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Github Actions</a>
+                <a href="https://github.com/features/actions" target="_blank" className="bg-green-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm inline-block mr-1">Github Actions</a>
               </p>
               <p className="mb-4">
                 A high-performance, multi-language landing page built with Next.js and Payload CMS. The project is designed to be lightweight, flexible and scalable, with a headless CMS for content management and MongoDB as the database.
